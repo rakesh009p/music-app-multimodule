@@ -12,6 +12,10 @@ target/
 .settings
 .springBeans
 .sts4-cache
+mvnw
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
 
 ### IntelliJ IDEA ###
 .idea
