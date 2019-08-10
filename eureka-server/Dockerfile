@@ -1,5 +1,6 @@
 FROM openjdk:11
-ADD ./target/eureka-server-0.0.1-SNAPSHOT.jar /eureka-server-0.0.1-SNAPSHOT.jar
-EXPOSE 8089
+##add/copy jar file from target to docker file system
+ADD ./target/eureka-0.0.1-SNAPSHOT.jar /usr/src/eureka-0.0.1-SNAPSHOT.jar
 WORKDIR usr/src
-ENTRYPOINT ["java","-jar","eureka-server-0.0.1-SNAPSHOT.jar"]
+#run the jar file
+ENTRYPOINT ["java","-jar","eureka-0.0.1-SNAPSHOT.jar"]
